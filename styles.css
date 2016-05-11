@@ -62,8 +62,20 @@ figcaption{
 		- à 1/4 du temps de l'animation, le sprite doit être décalé de 5 largeurs d'image vers la gauche (pour afficher la dernière image)
 		- à la fin, le sprite affiche toujours la dernière image (l'animation reste donc sur cette dernière image pendant les 3/4 du temps)
 */
-@ {
- 
+@keyframes skate {
+    from{left:    0;}
+    25% {left:-500%;}
+    to  {left:-500%;}
+}
+@-moz-keyframes skate {
+    from{left:    0;}
+    25% {left:-500%;}
+    to  {left:-500%;}
+}
+@-webkit-keyframes skate {
+    from{left:    0;}
+    25% {left:-500%;}
+    to  {left:-500%;}
 }
 /*
 3. d) On anime le srpite
